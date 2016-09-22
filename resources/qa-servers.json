@@ -1,0 +1,9 @@
+{
+	"fes": {
+		"nodes": ["google.com", "facebook.com", "mentored-research.com", "myadda52.com", "techrelief24x7.com", "sagaranand.com"]
+	},
+
+	"fesQa": {
+		"nodes": ["google.com", "facebook.com", "mentored-research.com", "myadda52.com", "techrelief24x7.com", "sagaranand.com"]	
+	}
+}

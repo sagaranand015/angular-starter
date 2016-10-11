@@ -31,8 +31,13 @@
 	
 		<toast></toast>
 		<div ng-show="mainCtrl.showDisabledScreen" id="cover"></div>
-		
-		<!-- the consistent header for all the pages -->
+
+		<h1 ng-show="!mainCtrl.show1">
+			{{no}}
+		</h1>
+
+		<button ng-click="increment(mainCtrl.show1)">Click me!!</button>
+
 		<div ng-include="'htmls/header.jsp'"></div> 
 
 		<div class="col-lg-12">
@@ -40,19 +45,17 @@
 			<section>
 				<div class="row">
 
-					<!-- for the menu on LHS -->
 					<div class="col-lg-3 col-md-3">
 						<div ng-include="'htmls/prodMenu.jsp'"></div>
 					</div>
 
-					<!-- for the display on RHS -->
 					<div class="col-lg-9 col-md-9">
 						<div ui-view></div>
 					</div>
 				</div>
 			</section>
 
-		</div>
+		</div> -->
 		
 	</body>
 
@@ -82,6 +85,7 @@
 	<!-- for all the angular controllers -->
 	<script src="app/layout/mainController.js"></script>
 	<script src="app/home/homeController.js"></script>
+	<script src="app/layout/headerController.js"></script>
 	<script src="app/services/utilityService.js"></script>
 	
 	<!-- for the custom controllers -->
